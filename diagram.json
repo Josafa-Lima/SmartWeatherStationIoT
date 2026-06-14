@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "author": "SmartWeather Station IoT",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -14.5, "left": -5, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht22", "top": -201.3, "left": 90.6, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -200,
+      "left": -350,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-ili9341", "id": "tft1", "top": -287.2, "left": 230.1, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led_verde",
+      "top": 150,
+      "left": -100,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_vermelho",
+      "top": 150,
+      "left": -50,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-buzzer", "id": "buzzer1", "top": 150, "left": 50, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 170,
+      "left": -100,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-resistor", "id": "r2", "top": 170, "left": -50, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "dht22:VCC", "esp:3V3", "red", [] ],
+    [ "dht22:GND", "esp:GND.1", "black", [] ],
+    [ "esp:RX2", "dht22:SDA", "green", [ "h33.1", "v-101.2" ] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [] ],
+    [ "tft1:VCC", "esp:3V3", "red", [] ],
+    [ "tft1:GND", "esp:GND.3", "black", [] ],
+    [ "tft1:LED", "esp:3V3", "red", [] ],
+    [ "tft1:CS", "esp:D5", "green", [ "v0" ] ],
+    [ "tft1:D/C", "esp:D2", "green", [ "v0" ] ],
+    [ "tft1:RST", "esp:D4", "green", [ "v0" ] ],
+    [ "tft1:SCK", "esp:D18", "green", [ "v0" ] ],
+    [ "tft1:MOSI", "esp:D23", "green", [ "v0" ] ],
+    [ "tft1:MISO", "esp:D19", "green", [ "v0" ] ],
+    [ "led_verde:A", "r1:1", "green", [] ],
+    [ "r1:2", "esp:25", "green", [] ],
+    [ "led_verde:C", "esp:GND.4", "black", [] ],
+    [ "led_vermelho:A", "r2:1", "red", [] ],
+    [ "r2:2", "esp:26", "red", [] ],
+    [ "led_vermelho:C", "esp:GND.5", "black", [] ],
+    [ "buzzer1:1", "esp:27", "orange", [] ],
+    [ "buzzer1:2", "esp:GND.6", "black", [] ],
+    [ "esp:3V3", "lcd1:VCC", "#8f4814", [ "v-144", "h-451.5" ] ],
+    [ "esp:D21", "lcd1:SDA", "magenta", [ "h0" ] ],
+    [ "esp:D22", "lcd1:SCL", "blue", [ "h-480.3", "v-153.9" ] ]
+  ],
+  "dependencies": {}
+}
