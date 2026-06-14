@@ -91,7 +91,7 @@ Instale via Library Manager do Wokwi/Arduino:
 ## Link da Simulação
 
 
-> `https://wokwi.com/projects/466834444149711873`
+https://wokwi.com/projects/466834444149711873
 
 ## Vídeo Demonstrativo
 
