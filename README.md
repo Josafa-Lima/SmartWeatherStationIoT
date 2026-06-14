@@ -97,5 +97,18 @@ https://wokwi.com/projects/466834444149711873
 
 https://youtu.be/sXIjulYpAgQ?si=XsOlgJ5YTOzEQBOk.
 
+## Imagens
+
+<img width="1366" height="768" alt="WhatsApp Image 2026-06-14 at 17 37 32" src="https://github.com/user-attachments/assets/c2d18a6b-d749-4f78-839a-a3de25c1c3c0" />
+<img width="1366" height="768" alt="WhatsApp Image 2026-06-14 at 17 37 19" src="https://github.com/user-attachments/assets/a3963f69-78ee-4770-946a-4ebff727a4c6" />
+<img width="1366" height="768" alt="WhatsApp Image 2026-06-14 at 17 33 29" src="https://github.com/user-attachments/assets/12ba01d8-022f-4bb0-837a-89f3485a0552" />
+<img width="1366" height="768" alt="WhatsApp Image 2026-06-14 at 17 32 26" src="https://github.com/user-attachments/assets/f4bc2a70-6cc5-4359-a97d-d780012be7de" />
+<img width="1366" height="768" alt="WhatsApp Image 2026-06-14 at 17 31 40" src="https://github.com/user-attachments/assets/314fd3f4-aa39-4aac-9355-fdf9d65759a6" />
+
+
+
+
+
+
 
 
